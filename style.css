@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Pacifico&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(213, 244, 207, 0.928);
+}
+header{
+    /* height: 20vh; */
+    width: 100%;
+    background-color: green;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    align-content: center;
+    /* padding-bottom: 10px; */
+}
+header > h1{
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "ROND" 0;
+}
+.hindi{
+    font-family: "Amita", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+header > p{
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+nav{
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    padding: auto;
+    background-color: green;
+    padding: 8px 0px 8px 0px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+nav li{
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 1vw;
+    padding: 3px 5px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+nav li:last-child{
+    width: 60px;
+}
+nav li:hover{
+    background-color: rgb(212, 211, 211);
+}
+nav a{
+    text-decoration: none;
+    color: green;
+}
+nav a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.animation{
+    height: 300px;
+    width: 100%;
+    background-image: url("https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/01/08/8e909cc5d035da5f60db016d8b1b3f61_1000x1000.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    animation: slider 20s linear 0s infinite normal both;
+
+}
+
+@keyframes slider {
+    0%{background-image: url("https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/01/08/8e909cc5d035da5f60db016d8b1b3f61_1000x1000.jpg");}
+    25%{background-image: url("https://d3sftlgbtusmnv.cloudfront.net/blog/wp-content/uploads/2024/08/A-waterfall-in-Jharkhand-Cover-Photo-840x425.jpg");}
+    50%{background-image: url("https://pbs.twimg.com/media/EMNwkhjVAAAbnEI?format=jpg&name=4096x4096");}
+    75%{background-image: url("https://s7ap1.scene7.com/is/image/incredibleindia/netarhat-dam-ranchi-jharkhand-3-attr-hero?qlt=82&ts=1727010992354");}
+}
+.table1{
+    overflow-x: auto;
+}
+table{
+    width: 100%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    /* margin: 5px; */
+}
+caption{
+    padding: 10px;
+}
+th{
+    padding: 10px;
+    background-color: green;
+    border: 2px solid black;
+}
+td{
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black;
+}
+td a:link {
+    text-decoration: none;
+    color: darkgreen;
+}
+td a:visited {
+    color: rgb(201, 159, 7);
+}
+td a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+ td a:active {
+    color: red;
+}
+
+tr:nth-child(even){
+    background-color: rgb(217, 235, 217);
+}
+tr:nth-of-type(odd){
+    background-color: rgb(241, 249, 241);
+}
+tr:not(:first-child):hover{
+    cursor: pointer;
+}
+tr:hover{
+    background-color: rgb(147, 220, 147);
+}
+
+.cardbox{
+    padding: 10px;
+    display: flex;
+    overflow: auto;
+    padding-top: 30px;
+}
+.card{
+    /* float: left; */
+    margin: 0 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+.card:hover{
+    border: 2px solid rgb(152, 151, 151);
+    background-color: rgb(241, 241, 241);
+    box-shadow: 1px 1px 8px gray;
+}
+.card>img{
+    height: 200px;
+    width: 250px;
+    box-sizing: border-box;
+}
+.card>img:hover{
+    opacity: 0.9;
+    border: 1px solid;
+}
+.textbox>h3{
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
+.textbox > p{
+    text-align: justify;
+}
+
+.Tips {
+    margin: 30px 10px 0 15px;
+    padding: 10px;
+    background-color: white;
+    /* border-radius: 10px; */
+    border-left: 5px solid green;
+}
+.Tips ul{
+    padding: 10px;
+    font-size: large;
+    list-style: none;
+}
+.Tips li::before {
+    content: "✔ ";
+    color: green;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.gallery>p{
+    background-color: white;
+    text-align: center;
+    font-weight: bolder;
+    margin: auto;
+    margin-top: 30px;    
+    padding-top: 5px;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+.image{
+    height: 40vh;
+    max-width: 800px;
+    margin: auto;
+    border: 5px solid white;
+    box-sizing: border-box;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Jharkhand_Rajakiya_Chihna.svg/640px-Jharkhand_Rajakiya_Chihna.svg.png), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiEeOLQ88muqXe7wY-B4pOZqFnm6rhwOqPHw&s), url(https://media.assettype.com/newindianexpress%2F2025-03-10%2Ffvkxoohm%2Fnewindianexpress2024-11-277wahsx80Jharkhand-Vidhan-Sabha-1.jpg?w=480&auto=format%2Ccompress&fit=max);
+    background-size:60px, 100px, cover;
+    background-repeat: no-repeat,no-repeat, no-repeat;
+    background-position: top right,top left, center ;
+    background-origin: content-box;
+    position: relative;
+}
+.text1{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    font-weight: bolder;
+    text-decoration:underline;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+section iframe{
+    height: 400px;
+    width: 80%;
+    margin: 5% 10%;
+    border: 3px solid darkgreen 2px ;
+    box-shadow: 0px 0px 10px gray;
+}
+
+footer{
+    height: 10vh;
+    width: 100vw;
+    font-size: 20px;
+    background-color: green;
+    text-align: center;
+    align-content: center;
+}
